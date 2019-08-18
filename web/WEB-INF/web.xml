@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ENTJAV2-MP1</display-name>
+  <welcome-file-list>
+    <welcome-file>App</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+  <context-param>
+    <param-name>VAT_RATE</param-name>
+    <param-value>12</param-value>
+  </context-param>
+
+  <servlet>
+    <servlet-name>App</servlet-name>
+    <servlet-class>controller.App</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>App</servlet-name>
+    <url-pattern>/App</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Add</servlet-name>
+    <servlet-class>controller.Add</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Add</servlet-name>
+    <url-pattern>/Add</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Remove</servlet-name>
+    <servlet-class>controller.Remove</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Remove</servlet-name>
+    <url-pattern>/Remove</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ViewItem</servlet-name>
+    <servlet-class>controller.ViewItem</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewItem</servlet-name>
+    <url-pattern>/ViewItem</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ProcessOrder</servlet-name>
+    <servlet-class>controller.ProcessOrder</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProcessOrder</servlet-name>
+    <url-pattern>/ProcessOrder</url-pattern>
+  </servlet-mapping>
+</web-app>
